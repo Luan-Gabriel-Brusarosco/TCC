@@ -17,7 +17,7 @@ html{
 }
 
 body{
-    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(./img/imgAcad.jpg);
+    background: linear-gradient(rgb(0, 0, 0), rgb(30, 60, 90),  rgb(60, 90, 120), rgb(150, 180, 210));
     background-position: center center;
     background-size: cover;
     background-position-y: 0px;
@@ -52,9 +52,9 @@ header{
     gap: 10px;
 }
 
-.menu-content .list-itens{
+.menu-content .list-itens a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 1.5rem;
     transform: 2ms ease-in;
     position: relative;
@@ -84,23 +84,24 @@ main{
 
 .main-content {
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 /*Textos conteudo princinpal */
 .primary-text{
-    width: 850px;
-    font-size: 5rem;
-    margin-bottom: 2rem;
+    width: 600px;
+    font-size: 4rem;
+    margin-bottom: 5rem;
     text-align: center;
+    color: white;
 }
 
 .second-text {
-    margin-bottom: 7rem;
-    font-size: 2rem;
-    color: rgb(165, 165, 165);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: rgb(150, 180, 210);
     text-transform: uppercase;
 }
 
@@ -115,8 +116,8 @@ main{
     width: 250px;
     height: 60px;
     cursor: pointer;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(45, 155, 210);
     text-transform: uppercase;
     background-color: transparent;
     font-weight: bolder;
@@ -126,19 +127,39 @@ main{
     transition: 1.5s;
 }
 
+.btns button:hover{
+    color: rgb(45, 155, 210);
+    border: none;
+}
+
 .btns button:before{
-    content: '';
+    content: ' ';
+    border-radius: 20px;
     bottom: 0;
     left: 0;
     position: absolute;
     width: 0;
     height: 60px;
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(20, 25, 30);
     z-index: -1;
     transition: 1s;
 }
 
 .btns button:hover:before{
     width: 100%;
+}
 
+a{
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(45, 155, 210);
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bolder;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
 }
