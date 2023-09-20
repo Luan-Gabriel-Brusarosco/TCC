@@ -80,12 +80,20 @@ body{
     color: rgb(60, 80, 80);
 }
 
+
+/*Botões*/
 .btn-login{
-    width: 100%;
-    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+    
+.btn-login button{
+    width: 200px;
+    padding: 16px 0px;
     margin: 25px;
     border: none;
-    border-radius: 7px;
+    border-radius: 8px;
     outline: none;
     text-transform: uppercase;
     font-weight: 800;
@@ -93,4 +101,29 @@ body{
     color: rgb(190, 240, 240);
     background: rgb(10, 30, 50);
     cursor: pointer;
+    position: relative;
+    transition: 1.5s;
+    box-shadow: 7px 7px 40px rgb(0, 0, 0);
+}
+    
+.btn-login button:hover{
+    color: rgb(10, 30, 50);
+    border: black;
+}
+    
+.btn-login button:before{
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(20, 25, 30);
+    z-index: -1;
+    transition: 1s;
+}
+    
+.btn-login button:hover:before{
+    width: 100%;
 }
