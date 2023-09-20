@@ -33,17 +33,64 @@ body{
 }
 
 .card-login{
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: rgb(75, 150, 150);
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000000;
+    box-shadow: 0px 10px 40px rgb(10, 30, 50);
 }
 
 .card-login > h1{
-    color: #00ff88;
+    color: rgb(10, 30, 50);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(10, 30, 50);
+    color: rgb(190, 240, 240);
+    font-size: 12pt;
+    box-shadow: 2px 2px 20px rgb(10, 30, 50);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: rgb(10, 30, 50);
+    margin-bottom: 5px;
+}
+
+.textfield > input::placeholder{
+    color: rgb(60, 80, 80);
+}
+
+.btn-login{
+    width: 100%;
+    padding: 15px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(190, 240, 240);
+    background: rgb(10, 30, 50);
+    cursor: pointer;
 }
