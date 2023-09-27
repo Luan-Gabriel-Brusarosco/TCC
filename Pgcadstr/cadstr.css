@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(20, 10, 50), rgb(160, 110, 200));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login h1{
+    color: rgb(20, 10, 50);
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(80, 70, 130);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(20, 10, 50);
+}
+
+.card-login > h1{
+    color: rgb(20, 10, 50);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(20, 10, 50);
+    color: rgb(220, 190, 240);
+    font-size: 12pt;
+    box-shadow: 2px 2px 20px rgb(20, 10, 50);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: rgb(20, 10, 50);
+    margin-bottom: 5px;
+}
+
+.textfield > input::placeholder{
+    color: rgb(75, 60, 80);
+}
+
+
+/*Botões*/
+.btn-login{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+    
+.btn-login button{
+    width: 200px;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(220, 190, 240);
+    background: rgb(20, 10, 50);
+    cursor: pointer;
+    position: relative;
+    transition: 1.5s;
+    box-shadow: 7px 7px 40px rgb(0, 0, 0);
+}
+    
+.btn-login button:hover{
+    color: rgb(20, 10, 50);
+    border: black;
+}
+    
+.btn-login button:before{
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(25, 15, 30);
+    z-index: -1;
+    transition: 1s;
+}
+    
+.btn-login button:hover:before{
+    width: 100%;
+}
