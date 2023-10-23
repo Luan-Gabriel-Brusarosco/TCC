@@ -5,7 +5,7 @@ body{
 .main-login{
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(rgb(20, 10, 50), rgb(160, 110, 200));
+    background: linear-gradient(rgba(65, 25, 240, 0.600), rgba(160, 110, 200, 0.650));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body{
 }
 
 .left-login h1{
-    color: rgb(20, 10, 50);
+    color: rgba(20, 10, 50);
 }
 
 .right-login{
@@ -39,9 +39,9 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: rgb(80, 70, 130);
+    background: rgba(80, 70, 130, 0.650);
     border-radius: 20px;
-    box-shadow: 0px 10px 40px rgb(20, 10, 50);
+    box-shadow: 0px 10px 40px rgb(110, 70, 130 );
 }
 
 .card-login > h1{
@@ -63,7 +63,7 @@ body{
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background: rgb(20, 10, 50);
+    background: rgba(20, 10, 50, 0.6);
     color: rgb(220, 190, 240);
     font-size: 12pt;
     box-shadow: 2px 2px 20px rgb(20, 10, 50);
@@ -77,7 +77,7 @@ body{
 }
 
 .textfield > input::placeholder{
-    color: rgb(75, 60, 80);
+    color: rgb(140, 110, 150);
 }
 
 
