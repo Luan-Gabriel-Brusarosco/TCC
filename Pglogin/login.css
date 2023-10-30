@@ -61,12 +61,11 @@ body{
 .textfield > input{
     width: 100%;
     border: none;
-    border-radius: 10px;
+    border-radius: 100px;
     padding: 15px;
     background: rgba(10, 30, 50, 0.9);
     color: rgba(190, 240, 240, 0.836);
     font-size: 12pt;
-    box-shadow: 2px 2px 20px rgb(10, 30, 50);
     outline: none;
     box-sizing: border-box;
 }
@@ -103,7 +102,6 @@ body{
     cursor: pointer;
     position: relative;
     transition: 1.5s;
-    box-shadow: 7px 7px 40px rgb(0, 0, 0);
 }
     
 .btn-login button:hover{

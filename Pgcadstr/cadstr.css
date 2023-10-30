@@ -5,7 +5,7 @@ body{
     font-family: 'Noto Sans', sans-serif;
 }
 
-.main-login{
+.main-cdst{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(rgba(60, 50, 110, 0.9), rgba(160, 110, 200, 0.65));
@@ -14,7 +14,7 @@ body{
     align-items: center;
 }
 
-.left-login{
+.left-cdst{
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -23,11 +23,11 @@ body{
     flex-direction: column;
 }
 
-.left-login h1{
+.left-cdst h1{
     color: rgba(20, 10, 50);
 }
 
-.right-login{
+.right-cdst{
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -35,7 +35,7 @@ body{
     align-items: center;
 }
 
-.card-login{
+.card-cdst{
     width: 50%;
     display: flex;
     justify-content: center;
@@ -47,7 +47,7 @@ body{
     box-shadow: 0px 10px 40px rgb(110, 70, 130 );
 }
 
-.card-login > h1{
+.card-cdst > h1{
     color: rgb(20, 10, 50);
     font-weight: 800;
     margin: 0;
@@ -65,12 +65,11 @@ body{
 .textfield > input{
     width: 100%;
     border: none;
-    border-radius: 10px;
+    border-radius: 100px;
     padding: 15px;
     background: rgba(20, 10, 50, 0.6);
     color: rgb(220, 190, 240);
     font-size: 12pt;
-    box-shadow: 2px 2px 20px rgb(20, 10, 50);
     outline: none;
     box-sizing: border-box;
 }
@@ -86,7 +85,7 @@ body{
 
 
 /*Botões*/
-.btn-login button{
+.btn-cdst button{
     width: 200px;
     padding: 16px 0px;
     margin: 25px;
@@ -101,17 +100,16 @@ body{
     cursor: pointer;
     position: relative;
     transition: 1.5s;
-    box-shadow: 7px 7px 40px rgb(0, 0, 0);
     justify-content: center;
     gap: 20px;
 }
     
-.btn-login button:hover{
+.btn-cdst button:hover{
     color: rgba(20, 10, 50, 0.45);
     border: black;
 }
     
-.btn-login button:before{
+.btn-cdst button:before{
     content: ' ';
     border-radius: 20px;
     bottom: 0;
@@ -122,6 +120,11 @@ body{
     transition: 1s;
 }
     
-.btn-login button:hover:before{
+.btn-cdst button:hover:before{
     width: 100%;
+}
+
+.img{
+    right: 19cm;
+    width: 19cm;
 }
