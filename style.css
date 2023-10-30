@@ -90,11 +90,14 @@ main{
     align-items: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;700&family=Noto+Sans:wght@400;700&family=Tai+Heritage+Pro:wght@400;700&display=swap');
+
 /*Textos conteudo princinpal */
 .primary-text{
-    width: 600px;
+    width: 700px;
     font-size: 4rem;
-    margin-bottom: 7rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 20rem;
     text-align: center;
     color: white;
     border-radius: 20px;
@@ -103,7 +106,6 @@ main{
 
 .second-text {
     margin-bottom: 1.5rem;
-    font-size: 1.5rem;
     color: rgb(150, 180, 210);
     text-transform: uppercase;
 }
@@ -116,6 +118,7 @@ main{
 }
 
 .btns button{
+    margin-bottom: 2rem;
     width: 250px;
     height: 60px;
     cursor: pointer;
