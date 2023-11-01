@@ -94,19 +94,33 @@ main{
 /*Textos conteudo princinpal */
 .primary-text{
     width: 700px;
-    font-size: 4rem;
+    font-size: 6.5rem;
     font-family: 'Noto Sans', sans-serif;
-    margin-bottom: 20rem;
+    margin-bottom: 5rem;
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 0);
     border-radius: 20px;
     box-shadow: 0px 10px 40px rgb(50, 70, 95);
+    transition: .7s;
+}
+
+.primary-text:hover{
+    letter-spacing: 0.2rem;
+}
+
+body:hover .primary-text{
+    
+    color: rgb(200, 235, 240);
 }
 
 .second-text {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     color: rgb(150, 180, 210);
     text-transform: uppercase;
+}
+
+.second-text:hover{
+    letter-spacing: 0.1rem;
 }
 
 /* Botões */
@@ -117,12 +131,12 @@ main{
 }
 
 .btns button{
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     width: 250px;
     height: 60px;
     cursor: pointer;
     border: 1px solid rgb(35, 130, 210);
-    color: rgb(255, 255, 255);
+    color: rgb(200, 235, 240);
     text-transform: uppercase;
     background-color: transparent;
     font-weight: bolder;
