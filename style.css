@@ -161,7 +161,7 @@ body:hover .primary-text{
     position: absolute;
     width: 0;
     height: 60px;
-    background-color: rgb(20, 25, 30);
+    background-color: rgb(170, 190, 200);
     z-index: -1;
     transition: 1s;
 }
@@ -182,9 +182,6 @@ body:hover .primary-text{
     border-radius: 100px;
     position: relative;
     transition: 1.5s;
-
-   
-    
     border-radius: 50%;
     border: none;
     font-size: 22px;
@@ -203,6 +200,38 @@ header>.interface {
     justify-content: space-between;
 }
 
+
+/* ESTILO DAS ESPECIALIDADES */
+section.especiliadades {
+    padding: 40px 4%;
+}
+
+section.especiliadades .flex {
+    gap: 60px;
+}
+
+.especiliadades .especialidades-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especiliadades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.especiliadades .especialidades-box i {
+    font-size: 70px;
+    color: rgb(95, 180, 240);
+}
+
+.especiliadades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
 section.formulario {
