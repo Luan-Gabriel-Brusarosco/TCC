@@ -7,12 +7,12 @@
 }
 
 .logo{
-    width: 500px;
-    height: 450px;
+    width: 300px;
+    height: 250px;
 }
 
 body {
-    background-color: rgb(5, 25, 45);
+    background-color: rgb(30, 55, 80);
     height: 100vh;
 }
 
@@ -26,11 +26,11 @@ body {
 }
 
 .btn-contato button {
-    padding: 10px 30px;
+    padding: 10px 40px;
     font-size: 20px;
     font-weight: 600;
     background-color: rgb(95, 180, 240);
-    border: 0;
+    border: 10;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
@@ -64,14 +64,14 @@ header>.interface {
 }
 
 header a {
-    color: #5c5c5c;
+    color: rgb(200, 235, 240);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 header nav.menu-desktop a:hover {
-    color: #fff;
+    color: rgb(0, 15, 40);
     transform: scale(1.05);
 }
 

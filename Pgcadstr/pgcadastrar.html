@@ -8,15 +8,15 @@
     <title>Cadastrar</title>
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 </head>
-<body>
-    <!-- <div class="main-login">
+<!-- <body>
+   <div class="main-login">
         <div class="left-login">
             <h1>Faça seu cadastro<br>E entre para nosso time</h1>
             <a class="btn-login" href="../index.html"><button>Voltar ao inicio</button></a>
         </div>
-        <div class="right-login">
-            <div class="card-login"> -->
-                <!-- <h1>LOGIN</h1>
+          <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
                 <div class="textfield">
                     <label for="usuario">Usuário</label>
                     <input type="text" name="usuario" placeholder="Usuário">
@@ -38,10 +38,10 @@
                     <input type="date" name="data_nasc">
                 </div>
                 <a class="btn-login" href="../Pghome/pghome.html"><button>Login</button></a>
-            </div> -->
+            </div>
         </div>
     </div>
-</body>
+</body> -->
 
 <script
       type="text/javascript"
@@ -80,7 +80,7 @@
                 </div>
                 <a class="btn-cdst" href="../Pghome/pghome.html"><button id="createButton">Cadastrar</button></a>
   </body>
-<script>
+<!-- <script>
    
     async function createParseUser() {
 
@@ -109,8 +109,27 @@
     document.getElementById("createButton").addEventListener("click", async function () {
       createParseUser();
     });
+  </script> -->
+
+  <script>
+    (async () => {
+  const cdstc = new Parse.Object('Cdstc');
+  cdstc.set('nome', 'A string');
+  cdstc.set('email', 'A string');
+  cdstc.set('telefone', 'A string');
+  cdstc.set('password', 'A string');
+  cdstc.set('data_nasc', new Date());
+  try {
+    const result = await cdstc.save();
+    // Access the Parse Object attributes using the .GET method
+    console.log('Cdstc created', result);
+  } catch (error) {
+    console.error('Error while creating Cdstc: ', error);
+  }
+})();
+    result.log("createButton").addEventListener("click", async function () {
+      createParseUser();
+    });
   </script>
-
-
 
 </html>
