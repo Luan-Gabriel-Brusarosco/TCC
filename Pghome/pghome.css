@@ -39,7 +39,7 @@ body {
 h2.titulo {
     color: #fff;
     font-size: 38px;
-    text-align: center;
+    btn-align: center;
 }
 
 h2.titulo span {

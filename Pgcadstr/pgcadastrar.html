@@ -58,27 +58,23 @@
         <div class="right-cdst">
             <div class="card-cdst">
             <h1>CADASTRO</h1>
-                <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
-                </div>
-                <div class="textfield">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="Email">
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha"> 
-                </div>
-                <div class="textfield">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" placeholder="Telefone">
-                </div>
-                <div class="textfield">
-                    <label for="data_nasc">Data de Nascimento</label>
-                    <input type="date" name="data_nasc">
-                </div>
-                <a class="btn-cdst" href="../Pghome/pghome.html"><button id="createButton">Cadastrar</button></a>
+            
+              <div class="textfield">
+                <input type="text" name="usuario" placeholder="Usuário" required>
+            </div>
+            <div class="textfield">
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="textfield">
+                <input type="password" name="senha" placeholder="Senha" required> 
+            </div>
+            <div class="textfield">
+                <input type="text" name="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="textfield">
+                <input type="date" name="data_nasc" required>
+            </div>
+            <a class="btn-cdst" href="../Pghome/pghome.html" type="submit"><button id="createButton">Cadastrar</button></a>
   </body>
 <!-- <script>
    
@@ -112,15 +108,15 @@
   </script> -->
 
   <script>
-    (async () => {
-  const cdstc = new Parse.Object('Cdstc');
-  cdstc.set('nome', 'A string');
-  cdstc.set('email', 'A string');
-  cdstc.set('telefone', 'A string');
-  cdstc.set('password', 'A string');
-  cdstc.set('data_nasc', new Date());
+  (async () => {
+  const myNewObject = new Parse.Object('Cdstc');
+  myNewObject.set('nome', 'A string');
+  myNewObject.set('email', 'A string');
+  myNewObject.set('telefone', 'A string');
+  myNewObject.set('password', 'A string');
+  myNewObject.set('data_nasc', new Date());
   try {
-    const result = await cdstc.save();
+    const result = await myNewObject.save();
     // Access the Parse Object attributes using the .GET method
     console.log('Cdstc created', result);
   } catch (error) {

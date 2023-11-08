@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="post.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        imagem logo
+    </header>
+
+    <main class="main">
+        <div class="newPost">
+            <div class="infoUser">
+                <div class="imgUser"></div>
+                <strong>Teste</strong>
+            </div>
+
+            <form action="" class="formPost" id="formPost">
+                <textarea name="textarea" placeholder="pensamento do momento" id="textarea"></textarea>
+
+                <div class="iconsAndButton">
+                    <div class="icons">
+                        <button class="btnFileForm">gif</button>
+                        <button class="btnFileForm">foto</button>
+                        <button class="btnFileForm">video</button>
+                    </div>
+
+                    <button type="submit" class="btnSubmitForm" id="botao">Publicar</button>
+                </div>
+            </form>
+        </div>
+        <ul class="posts" id="posts">
+            
+            <li class="post">
+                <div class="infoUserPost">
+                    <div class="imgUserPost"></div>
+
+                    <div class="nameAndHour">
+                        <strong>teste</strong>
+                        <p>21h</p>
+                    </div>
+                </div>
+                    <p>
+                       Primeiro post
+                    </p>
+
+                    <div class="actionBtnPost">
+                        <button type="button" class="filesPost like"><img src="" >Curtir</button>
+                        <button type="button" class="filesPost comment"><img src="" >Comentar</button>
+                        <button type="button" class="filesPost share"><img src="" >Compartilhar</button>
+                    </div>
+                </div>
+            </li>
+        </ul>   
+    </main>
+    <script type="module" src="/Controllers/FormPost.js"></script>
+</body>
+</html>
