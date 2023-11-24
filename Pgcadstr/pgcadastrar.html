@@ -8,41 +8,6 @@
     <title>Cadastrar</title>
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
 </head>
-<!-- <body>
-   <div class="main-login">
-        <div class="left-login">
-            <h1>Faça seu cadastro<br>E entre para nosso time</h1>
-            <a class="btn-login" href="../index.html"><button>Voltar ao inicio</button></a>
-        </div>
-          <div class="right-login">
-            <div class="card-login">
-                <h1>LOGIN</h1>
-                <div class="textfield">
-                    <label for="usuario">Usuário</label>
-                    <input type="text" name="usuario" placeholder="Usuário">
-                </div>
-                <div class="textfield">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" placeholder="Email">
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha"> 
-                </div>
-                <div class="textfield">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" placeholder="Telefone">
-                </div>
-                <div class="textfield">
-                    <label for="data_nasc">Data de Nascimento</label>
-                    <input type="date" name="data_nasc">
-                </div>
-                <a class="btn-login" href="../Pghome/pghome.html"><button>Login</button></a>
-            </div>
-        </div>
-    </div>
-</body> -->
-
 <script
       type="text/javascript"
       src="https://npmcdn.com/parse/dist/parse.min.js"
@@ -58,7 +23,7 @@
         <div class="right-cdst">
             <div class="card-cdst">
             <h1>CADASTRO</h1>
-            
+            <form>
               <div class="textfield">
                 <input type="text" name="usuario" placeholder="Usuário" required>
             </div>
@@ -74,58 +39,39 @@
             <div class="textfield">
                 <input type="date" name="data_nasc" required>
             </div>
-            <a class="btn-cdst" href="../Pghome/pghome.html" type="submit"><button id="createButton">Cadastrar</button></a>
-  </body>
-<!-- <script>
-   
-    async function createParseUser() {
+            <a class="btn-cdst" id="createButton" href="/Pghome/pghome.html"><button>Cadastrar</button></a>
+         </div>
+            </form>
+            
+  
 
-      let user = new Parse.User();
-      
-      user.set("username", document.getElementById("username").value);
-      user.set("email", document.getElementById("email").value);
-      user.set("password", document.getElementById("password").value);
-      try {
-        
-        user = await user.save();
-        if (user !== null) {
-          
-          alert(
-            `New object created with success! ObjectId: ${
-              user.id
-            }, ${user.get("username")}`
-          );
-        }
-      } catch (error) {
-        alert(`Error: ${error.message}`);
+    <script>   
+      Parse.initialize("YGE81sqQFDDvJ2AeZPCvcRTuElr7gPNcVbj7Dw8v", "0Z2YNoILwSnbzZGfROL7lXCsjTGNVdNn9yxgjmhR");
+      Parse.serverURL = "https://parseapi.back4app.com/";
+
+      let  btnCad = document.getElementById('createButton');
+      console.log(btnCad);
+
+      btnCad.onclick = function(){
+          cadastrarUsuario();
       }
-    }
 
-    
-    document.getElementById("createButton").addEventListener("click", async function () {
-      createParseUser();
-    });
-  </script> -->
+      const cadastrarUsuario = async () => {
+        const cdstc = new Parse.Object('Cdstc');
+        cdstc.set('nome', document.getElementsByName('usuario')[0].value );
+        cdstc.set('email',    document.getElementsByName('email')[0].value);
+        cdstc.set('telefone', document.getElementsByName('telefone')[0].value);
+        cdstc.set('password', document.getElementsByName('senha')[0].value);
+        cdstc.set('data_nasc', document.getElementsByName('data_nasc')[0].value);
+        try {
+          const result = await cdstc.save();
+          // Access the Parse Object attributes using the .GET method
+          console.log('Cdstc created', result);
+        } catch (error) {
+          console.error('Error while creating Cdstc: ', error);
+        }
+      }
 
-  <script>
-  (async () => {
-  const myNewObject = new Parse.Object('Cdstc');
-  myNewObject.set('nome', 'A string');
-  myNewObject.set('email', 'A string');
-  myNewObject.set('telefone', 'A string');
-  myNewObject.set('password', 'A string');
-  myNewObject.set('data_nasc', new Date());
-  try {
-    const result = await myNewObject.save();
-    // Access the Parse Object attributes using the .GET method
-    console.log('Cdstc created', result);
-  } catch (error) {
-    console.error('Error while creating Cdstc: ', error);
-  }
-})();
-    result.log("createButton").addEventListener("click", async function () {
-      createParseUser();
-    });
-  </script>
-
+    </script>
+  </body>
 </html>
