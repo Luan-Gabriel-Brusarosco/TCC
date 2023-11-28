@@ -23,25 +23,35 @@
         <div class="right-cdst">
             <div class="card-cdst">
             <h1>CADASTRO</h1>
-            <form>
+            
               <div class="textfield">
                 <input type="text" name="usuario" placeholder="Usuário" required>
-            </div>
-            <div class="textfield">
+              </div>
+              <div class="textfield">
                 <input type="text" name="email" placeholder="Email" required>
-            </div>
-            <div class="textfield">
+              </div>
+              <div class="textfield">
                 <input type="password" name="senha" placeholder="Senha" required> 
-            </div>
-            <div class="textfield">
+              </div>
+              <div class="textfield">
                 <input type="text" name="telefone" placeholder="Telefone" required>
-            </div>
-            <div class="textfield">
+              </div>
+              <div class="textfield">
                 <input type="date" name="data_nasc" required>
-            </div>
-            <a class="btn-cdst" id="createButton" href="/Pghome/pghome.html"><button>Cadastrar</button></a>
+              </div>
+            
+            <a class="btn-cdst" href="../Pghome/pghome.html"><button>Cadastrar</button></a>
          </div>
-            </form>
+         
+         <script>
+          function cadastrar(){
+            var usuario = document.getElementById('usuario').value;
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+            var telefone = document.getElementById('telefone').value;
+            var data_nasc = document.getElementById('data_nasc').value;
+          }
+         </script>
             
   
 
@@ -57,7 +67,7 @@
       }
 
       const cadastrarUsuario = async () => {
-        const cdstc = new Parse.Object('Cdstc');
+      const cdstc = new Parse.Object('Cdstc');
         cdstc.set('nome', document.getElementsByName('usuario')[0].value );
         cdstc.set('email',    document.getElementsByName('email')[0].value);
         cdstc.set('telefone', document.getElementsByName('telefone')[0].value);
