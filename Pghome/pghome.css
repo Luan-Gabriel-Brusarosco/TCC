@@ -9,6 +9,10 @@
 .logo{
     width: 300px;
     height: 250px;
+    text-align: left;
+    margin-right: 10%;
+    margin-left:0%;
+    margin-top: 0%;
 }
 
 body {
@@ -17,7 +21,7 @@ body {
 }
 
 .interface {
-    max-width: 1280px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -80,6 +84,7 @@ header nav ul {
 }
 
 header nav.menu-desktop ul li {
+    margin: auto;
     display: inline-block;
     padding: 0 30px;
 }

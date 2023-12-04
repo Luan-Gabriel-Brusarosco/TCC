@@ -20,29 +20,31 @@
             <img class="img" src="fitness-animate.svg" alt="Fitness">
             <a class="btn-cdst" href="../index.html"><button>Voltar ao inicio</button></a>
         </div>
+        
         <div class="right-cdst">
+          
             <div class="card-cdst">
-            <h1>CADASTRO</h1>
+              <h1>CADASTRO</h1>
+                <div class="textfield">
+                  <input type="text" name="usuario" placeholder="Usuário" required>
+                </div>
+                <div class="textfield">
+                  <input type="text" name="email" placeholder="Email" required>
+                </div>
+                <div class="textfield">
+                  <input type="password" name="senha" placeholder="Senha" required> 
+                </div>
+                <div class="textfield">
+                  <input type="text" name="telefone" placeholder="Telefone" required>
+                </div>
+                <div class="textfield">
+                  <input type="date" name="data_nasc" required>
+                </div>
             
-              <div class="textfield">
-                <input type="text" name="usuario" placeholder="Usuário" required>
-              </div>
-              <div class="textfield">
-                <input type="text" name="email" placeholder="Email" required>
-              </div>
-              <div class="textfield">
-                <input type="password" name="senha" placeholder="Senha" required> 
-              </div>
-              <div class="textfield">
-                <input type="text" name="telefone" placeholder="Telefone" required>
-              </div>
-              <div class="textfield">
-                <input type="date" name="data_nasc" required>
-              </div>
-            
-            <a class="btn-cdst" href="../Pghome/pghome.html"><button>Cadastrar</button></a>
-         </div>
-         
+              <a class="btn-cdst" href="../Pghome/pghome.html"><button>Cadastrar</button></a>
+            </div>
+          
+       </div>
          <script>
           function cadastrar(){
             var usuario = document.getElementById('usuario').value;

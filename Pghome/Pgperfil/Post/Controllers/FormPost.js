@@ -1,25 +1,3 @@
-/*export class FormPost{
-    constructor(idForm, idTextarea, idUlPost){
-        this.form = document.getElementById(idForm);
-        this.textarea = document.getElementById(idTextarea);
-        this.ulPost = document.getElementById(idUlPost); 
-    }
-
-    onSubmit(func){
-        this.form.addEventListener('submit', func)
-    }
-
-    addSubmit(){
-        const handleSubmit = (event)=> {
-            event.preventDefault();
-            console.log('Evento add.')
-
-        }
-        this.onSubmit(handleSubmit)
-    }
-}
-const postForm = new FormPost('formPost', 'textarea', 'posts')*/
-
 export class FormPost {
     constructor(idForm, idTextarea, ListPost) {
       this.form = document.getElementById(idForm);
@@ -51,12 +29,12 @@ export class FormPost {
           const newPost = document.createElement("li");
           newPost.classList.add("post");
           const time = this.getTime();
-          newPost.innerHTML = (
+          newPost.innerHTML = `
           <div class="infoUserPost">
             <div class="imgUserPost"></div>
   
             <div class="nameAndHour">
-              <strong>Douglas Pujol</strong>
+              <strong>Joao</strong>
               <p>${time}</p>
             </div>
           </div>
@@ -79,11 +57,11 @@ export class FormPost {
               Compartilhar
             </button>
           </div>
-          ;
+          `;
           this.listPost.appendChild(newPost);
           this.textarea.value = "";
         } else {
-          alert("ALGUM ERRO");
+          alert("ESCREVA UMA MENSAGEM");
         }
       };
   
@@ -99,4 +77,8 @@ export class FormPost {
   }
   
   const postForm = new FormPost("formPost", "textarea", "posts");
-  
+
+
+
+
+

@@ -41,10 +41,9 @@ header{
     font-size: 1.8rem;
 }
 
-.Logo{
-    font-size: 1.8rem;
-    letter-spacing: 0.4rem;
-    cursor: pointer;
+.logo{
+    width: 430px;
+    height: 90px;
 }
 
 .menu-content .list-itens{
@@ -94,7 +93,7 @@ main{
 /*Textos conteudo princinpal */
 .primary-text{
     width: 700px;
-    font-size: 6.5rem;
+    font-size: 7rem;
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 5rem;
     text-align: center;
@@ -102,10 +101,6 @@ main{
     border-radius: 20px;
     box-shadow: 0px 10px 40px rgb(50, 70, 95);
     transition: .7s;
-}
-
-.primary-text:hover{
-    letter-spacing: 0.2rem;
 }
 
 body:hover .primary-text{
@@ -170,24 +165,33 @@ body:hover .primary-text{
     width: 100%;
 }
 
-.icones{
-    width: 30px;
-    height: 50px;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-color: rgb(5, 25, 45);
-    font-weight: bolder;
-    letter-spacing: 0.2rem;
-    border-radius: 10px;
-    position: relative;
-    transition: 1.5s;
-    border: 10;
-    font-size: 25px;
-    cursor: pointer;
-    margin: 0 5px;
-    padding: 10px 40px;
+.whats{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: rgb(15, 195, 95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.face{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: rgb(30, 100, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insta{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: linear-gradient(rgb(115, 25, 165), rgb(165, 15, 105), rgb(200, 50, 20), rgb(230, 190, 10));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .interface {
     max-width: 1280px;
@@ -312,11 +316,6 @@ footer .line-footer p a {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-
-.logo{
-    width: 500px;
-    height: 450px;
 }
 
 body {
@@ -548,5 +547,14 @@ header nav.menu-desktop ul li {
 
     footer .line-footer {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
     }
 }
